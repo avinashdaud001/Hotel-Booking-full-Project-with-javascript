@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <title>Index</title>
+    <style>
+        #map {
+            height: 100%;
+        }
+
+        html,
+        body {
+            height: 0;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body style="width: 100%; position: absolute; z-index: 1;">
+
+   
+    <header>
+
+        <img id="logo" src="./assests/images/logo.png" alt="logo" height="60px" width="60px"><br>
+        <button style="float: right;" class="btn btn-light" onclick="headr_login()" id="login-btn"
+            margin-top="10%">Login</button>
+
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div id="modal-header" class="modal-header">
+                    <span class="close">&times;</span>
+                    <h5 class="modal-title">Please Login!</h5>
+
+                    <form action="index.html" method="get" autocomplete="off">
+                        <label for="user">Username:</label>
+                        <input id="user" type="text" name="username" value="" placeholder="enter your name"
+                            required><br><br>
+                        <label for="password">Password:</label>
+                        <input id="password" type="password" name="password" value="" placeholder="enter your password"
+                            required><br>
+
+                </div>
+                <div id="modal-footer" class="modal-footer">
+
+                    <button type="button" onclick="Mylognbtn()" id="lognbtn-in-modal"
+                        class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+    <!-- Content div -->
+    <div>
+        <input type="text" id="search-bar" placeholder="City"><br>
+    </div>
+    <!-- All the images in the background of states -->
+    <div id="Content-div">
+        <div class="image-container" style="margin-top: 20%;">
+            <a href="list.html">
+                <img class=" images" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg "
+                    height="150px" width="150px"></a>
+            <div class="container-overly">
+
+                <div class="text">DELHI</div>
+            </div>
+        </div>
+        <div class="image-container" style="margin-top: 20%;">
+            <img class=" images" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg "
+                height="150px" width="150px">
+            <div class="container-overly">
+                <div class="text">GOA</div>
+            </div>
+        </div>
+        <div class="image-container" style="margin-top: 20%;">
+            <img class=" images" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg  "
+                height="150px" width="150px">
+            <div class="container-overly">
+                <div class="text">HYDERBAD</div>
+            </div>
+        </div>
+        <div class="image-container" style="margin-top: 20%;">
+            <img class=" images" src=" https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
+                height="150px" width="150px"><br>
+            <div class="container-overly">
+                <div class="text">KOLKATA</div>
+            </div>
+        </div><br>
+        <div class="image-container" style="margin-top: 20%;">
+            <img class="images" src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg"
+                height="150px" width="150px"><br>
+            <div class="container-overly">
+                <div class="text">CHENNAI</div>
+            </div>
+        </div>
+
+        <div class="image-container" style="margin-top: 15%;">
+            <img class="images" src="    https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg"
+                height="150px" width="150px"><br>
+            <div class="container-overly">
+                <div class="text">AGRA</div>
+            </div>
+        </div>
+
+        <div class="image-container" style="margin-top: 15%;">
+            <img class="images"
+                src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg"
+                height="150px" width="150px"><br>
+            <div class="container-overly">
+                <div class="text">JAIPUR</div>
+            </div>
+        </div>
+
+
+        <div class="image-container" style="margin-top: 15%;">
+            <img class="images"
+                src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg"
+                height="150px" width="150px"><br>
+            <div class="container-overly">
+                <div class="text">BENGALURU</div>
+            </div>
+        </div>
+    </div>
+    <!-- here content that is of images of states is end -->
+
+    <input style="color: yellow; background-color: brown;" id="viewmore" type=button onClick="parent.location='#'"
+        value='View more>>'>
+
+    <!-- Footer of the webapge -->
+    <footer>
+
+        <!-- <button id="contact-us" type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                data-target="#myModals">Contact us</button> -->
+
+
+
+
+
+        <div id="logogrp">
+            <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" height="20px"
+                    width="22px"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" height="20px"
+                    width="22px"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="assests/images/twitter.png" height="20px"
+                    width="22px"></a><br>
+        </div>
+        <span id="copy">© 2022 ROOM SEARCH PVT. LTD.</span>
+
+        <!-- <button style="float: left;"  id="myBtn2" class="btn btn-primary" >Contact us</button> -->
+
+        <button onclick="document.getElementById('mymodal2').style.display='block'"
+            style="margin-right: 5%;margin-top: 25px; margin-left: 9px; background-color: hsl(51, 100%, 50%); color: white;">Contact
+            Us</button>
+        <!-- The Modal -->
+
+
+        <div id="mymodal2" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php" method="post" style="max-width: 50%;">
+                <div class="modal-content">
+                    <span onclick="document.getElementById('mymodal2').style.display='none'"
+                        class="close">&times;</span>
+                    <div>
+                        <h3 style="font-style: italic; background-color: yellowgreen;">
+                            Get in touch ----
+                        </h3>
+                        <h5>
+                            Thankyou for reaching out!!!!
+                        </h5>
+                        <h5>
+                            Please enter your email and we will get back to you soon .......
+                        </h5>
+                    </div>
+
+                    <div class="cont">
+                        <label for="email"><b>Email</b></label>
+                        <input type="email" style=" background-color: bisque;" placeholder="Enter your email id"
+                            name="email" required><br>
+
+
+                    </div>
+
+                    <div class="cont" style="background-color:hsl(0, 0%, 95%)">
+                        <button type="button" onclick="document.getElementById('mymodal2').style.display='none'"
+                            style="background-color: green;" class="cancelbtn">Submit</button>
+                    </div>
+
+            </form>
+        </div>
+
+
+    </footer>
+    </div>
+    }
+
+    <div id="map"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyO1TBNLkYctlw_orQaTF2WzUUyLx2GGA&callback=initMap"></script>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8
+            });
+        }
+    </script>
+
+
+
+
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/index.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

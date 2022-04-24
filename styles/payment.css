@@ -1,0 +1,164 @@
+body{
+  margin: 0px;
+background-color:#e0e0e0;
+font-family:'Ubuntu', sans-serif;
+}
+
+
+.payment-img{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: max-content;
+position: relative;
+margin:0% 0% 0% 30% ;
+margin-left: 0;
+}
+
+#back-img{
+
+
+background-color: rgb(132,136,139);
+margin: auto;
+
+margin-top:5%;
+width: 40%;
+height:fit-content;
+align-content: stretch;
+border: 1px solid greenyellow;
+
+} 
+#Customer-div{
+margin: 2%;
+border: 3px solid peru;
+background-color: rosybrown;
+width: 70%;
+padding: 0% 2%;
+margin-left: 13%;
+/* text-decoration: underline; */
+}
+.customer-detail{
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+#amount-dtl{
+/* border: 2px solid rgb(8, 132, 136);
+border-radius: 5px;
+ */
+/* margin: 1% 10% 3% 2%; */
+margin-left: 10%;
+padding: 1% 2%;
+}
+.pay{
+display: flex;
+float: inline-end;
+padding: 5%;
+}
+
+#copy{
+position: absolute;
+bottom: 1%;
+margin-left: 40%;
+margin-bottom: 1%;
+}
+#logogrp{ 
+float: right;
+margin-right: 1%;
+margin-bottom: 1%;
+} 
+#contact-us{
+position:absolute;
+top: 15px;
+margin-left: 1%;
+text-decoration: none;
+color: black;
+
+}
+#logo{
+
+margin-bottom: 0px;
+}
+#login{
+display: flex;
+justify-content: flex-end;
+margin-right: 2%;
+margin-top: -50px;
+text-decoration: none;
+color: black;
+}
+
+header{
+position: fixed;
+z-index: 1;
+top:0;
+width: 100%;
+height:7%;
+background-color:rosybrown;
+} 
+
+footer{
+background-color:rosybrown;
+position:fixed;
+bottom:0;
+width:100%;
+
+}
+#paynow{
+float: left;
+position:static;
+margin-top: -2%;
+margin-bottom: 7%;
+margin-left: 3%;
+text-decoration: none;
+color: black;
+}
+
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+/* padding-top: -50px;  */
+margin-left: 40%;
+margin-right: 50%;
+margin-top: 10%;
+width: 40%; /* Full width */
+height: 60%; /* Full height */
+/* Enable scroll if needed */
+
+}
+.close {
+color: black;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+#lognbtn-in-modal:hover{
+border-color: black;
+color: aquamarine;
+}
+#lognbtn-in-modal::first-letter{
+font-size: 20px;
+}
+.close:hover,
+.close:focus {
+color: red;
+text-decoration: none;
+cursor: pointer;
+}
+
+#modal-header{
+background-color: greenyellow;
+font-size: xx-large;
+font-weight: bold;
+font-size: medium;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+#modal-footer{
+background-color: antiquewhite;
+}
+#main-hedaer-login-btn{
+position: relative;
+margin-top: -5px;
+}

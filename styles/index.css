@@ -1,0 +1,156 @@
+body{   
+    margin: 0%;
+     background-color:#e0e0e0;
+    background-image:url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:'Ubuntu', sans-serif;
+
+}
+.images{
+   border-radius: 25px;
+   margin:0% 5% 5% 5%;
+   padding: 0%;
+   box-shadow: 10px 10px 10px green;
+}
+#Content-div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 14%;
+    width:70%;
+    margin-left: 14%;   
+}
+
+#viewmore{
+    position: relative;
+     margin-top: 8%;
+    margin-bottom: 10%;
+     margin-left: 45%;
+    
+
+  
+}
+   
+
+#search-bar{
+    
+    position: absolute;
+    /* z-index: -1; */
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    width: 15%;
+    height: 3%;
+    margin: 12% 40% 0% 40%;
+    font-size: 16px;
+    padding-left: 10px; 
+    outline: none;
+ 
+}
+
+ .image-container{
+     display: flex;
+     width: 197px;
+ }
+ .container-overly{
+
+    position: relative;
+    width: 75%;
+    height: 100%;
+    border-radius: 30px;
+    margin-left: -80%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: aqua;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    opacity:0;
+ }
+ .container-overly:hover{
+     opacity: 1;
+
+ }
+ .text{
+     font-size: 15px;
+     /* font-weight: 400; */
+ }
+
+
+ #container-modal2{
+    float: left;
+    background-color: aqua;
+    
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /* padding-top: -50px;  */
+    margin-left: 40%;
+    margin-right: 50%;
+    margin-top: 10%;
+    width: 40%; /* Full width */
+    height: 60%; /* Full height */
+     /* Enable scroll if needed */
+     
+
+  }
+  .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  #lognbtn-in-modal:hover{
+      border-color: black;
+      color: aquamarine;
+  }
+  #lognbtn-in-modal::first-letter{
+      font-size: 20px;
+  }
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #modal-header{
+      background-color: greenyellow;
+      font-size: xx-large;
+      font-weight: bold;
+     font-size: medium;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+  }
+  #modal-footer{
+      background-color: antiquewhite;
+  }
+  #main-hedaer-login-btn{
+      position: relative;
+      margin-top: -5px;
+  }
+  /* @media screen and (max-width: 500px) {
+    body,header,footer{
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+/* 
+    @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  } */
+  
+  /* Change styles for span and cancel button on extra small screens */
+  /* @media screen and (min-width: 576px) {
+    header,footer{
+        width:100%;
+    }
+} */

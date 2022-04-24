@@ -1,0 +1,157 @@
+body{
+
+    margin: 0px;
+background-color:#e0e0e0;
+/* font-family:'Ubuntu', sans-serif; */
+}
+span{
+    font-family:'Ubuntu', cursive;
+
+}
+
+  
+#Radisson{
+    margin:8% 1% 5% 15%;
+    display: flex;
+    justify-content: center;
+}
+#hotel-desp{
+    margin-left: 10%;
+    margin-bottom: 10%;
+
+}
+
+#copy{
+    position: absolute;
+    bottom: 1%;
+    margin-left: 40%;
+    margin-bottom: 1%;
+    }
+#logogrp{ 
+    float: right;
+    margin-right: 1%;
+    margin-bottom: 1%;
+} 
+#contact-us{
+    position:absolute;
+    top: 15px;
+    margin-left: 1%;
+    text-decoration: none;
+    color: black;
+
+}
+#logo{
+    margin: 0;
+  position: absolute;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-2%);
+  
+}
+#login{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+    text-decoration: none;
+    color: black;
+}
+
+header{
+position: fixed;
+z-index: 1;
+top:0;
+width: 100%;
+height:7%;
+background-color:rosybrown;
+
+} 
+
+footer{
+background-color:rosybrown;
+position:fixed;
+bottom:0;
+width:100%;
+
+}
+
+
+table{
+
+border: 3px solid black;
+width: 50%;
+height:50%;
+border-collapse: collapse;
+}
+table td {
+border: 1px solid black;
+text-align: center;
+border-collapse: collapse;
+
+}
+
+.image-container{
+/* line-height: 20px; */
+margin: 5% 10% 2% 10%;  
+}
+
+.form-container{
+margin: -50% 4% 2%;
+
+}
+#book-btn{
+color: green;
+border: 1px solid green;
+}
+#book-btn:hover{
+background-color: aquamarine;
+cursor: pointer;
+}
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+/* padding-top: -50px;  */
+margin-left: 40%;
+margin-right: 50%;
+margin-top: 10%;
+width: 40%; /* Full width */
+height: 60%; /* Full height */
+/* Enable scroll if needed */
+
+}
+.close {
+color: black;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+#lognbtn-in-modal:hover{
+border-color: black;
+color: aquamarine;
+}
+#lognbtn-in-modal::first-letter{
+font-size: 20px;
+}
+.close:hover,
+.close:focus {
+color: red;
+text-decoration: none;
+cursor: pointer;
+}
+
+#modal-header{
+background-color: greenyellow;
+font-size: xx-large;
+font-weight: bold;
+font-size: medium;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+#modal-footer{
+background-color: antiquewhite;
+}
+#main-hedaer-login-btn{
+position: relative;
+margin-top: -5px;
+}
+.checked{
+color: orange;
+}

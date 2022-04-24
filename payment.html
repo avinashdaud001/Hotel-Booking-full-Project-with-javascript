@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="./styles/payment.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+  <title>Payment</title>
+</head>
+
+<body style="width: 100%;" style="height:100%">
+
+
+  <!-- Header of the webpage -->
+  <header>
+    
+      <img id="logo" src="./assests/images/logo.png" alt="logo" height="60px" width="60px">
+    
+  
+    <button style="float: right;" class="btn btn-light" id="login-btn">Login</button>
+
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div id="modal-header" class="modal-header">
+          <span class="close">&times;</span>
+          <h5 class="modal-title">Please Login!</h5>
+
+          <form action="index.html" method="get" autocomplete="off">
+            <label for="user">Username:</label>
+            <input id="user" type="text" name="username" value="" placeholder="enter your name" required><br><br>
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" value="" placeholder="enter your password"
+              required><br>
+
+        </div>
+        <div id="modal-footer" class="modal-footer">
+
+          <button type="button" onclick="Mylognbtn()" id="lognbtn-in-modal" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Content of webpage -->
+  <div id="back-img">
+    <div class="payment-img"><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+        height="200px" width="200px"><br>
+      <div class="details">
+        <h2>Radisson Blu Hotel</h2>
+        <span>#38 of 1,289 hotel in New-delhi</span><br><br>
+        <span>National Highway 8, NEW Delhi 111071 India</span><br><br>
+      </div>
+    </div>
+  </div>
+  <!-- Payment details -->
+  <div id="Customer-div">
+    <div class="customer-detail">
+      <div style="display: block;">
+        <span
+          style="font-weight: bold; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Name:</span>
+        <span>John Doe</span><br><br>
+        <span style="font-weight: bold;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Number of
+          Adults:</span> <span>2</span><br><br>
+        <span style="font-weight: bold;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Check-in
+          Date:</span> <span>11-03-2022</span><br><br>
+        <span style="font-weight: bold;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Check-out
+          Date:</span> <span>15-03-2022</span><br><br>
+      </div>
+      <div id="amount-dtl">
+        <span style="font-weight: bold;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Tarrif
+          Breakdown:</span> <span>Rs 4000*2 Adults*2 Nights</span><br><br>
+        <span style="font-weight: bold;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Total
+          Amount:</span> <span>16000</span><br><br>
+      </div>
+      <div class="pay">
+        <button id="paynow" type="button" onclick="alert('Hi your booking is successful')"class="btn btn-success">PayNow</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer of the webapge -->
+  <footer>
+
+
+ 
+    <div id="logogrp">
+      <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" height="20px"
+          width="22px"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" height="20px"
+          width="22px"></a>
+      <a href="https://www.twitter.com/" target="_blank"><img src="assests/images/twitter.png" height="20px"
+          width="22px"></a><br>
+
+    </div>
+    <span id="copy">© 2022 ROOM SEARCH PVT. LTD.</span>
+
+    <button onclick="document.getElementById('mymodal2').style.display='block'" style="margin-right: 5%;margin-top: 10px; margin-left: 9px; margin-bottom:5px; background-color: hsl(51, 100%, 50%); color: white;">Contact Us</button>
+        <!-- The Modal -->
+
+ 
+        <div id="mymodal2" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post" style="max-width: 50%;">
+                <div style="background-color: aquamarine;" class="modal-content">
+                    <span onclick="document.getElementById('mymodal2').style.display='none'" class="close">&times;</span>
+                <div>
+                  <h3 style="font-style: italic;">
+                      Get in touch ----
+                  </h3>
+                  <h5>
+                      Thankyou for reaching out!!!!
+                  </h5>
+                  <h5>
+                      Please enter your email and we will get back to you soon .......
+                  </h5>
+              </div>
+          
+              <div style="background-color: antiquewhite;" class="cont">
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter your email id" name="email" required><br>
+                  
+                
+              </div>
+          
+              <div class="cont" style="background-color:hsl(0, 0%, 95%)">
+                <button type="button" onclick="document.getElementById('mymodal2').style.display='none'"  style="border-color: teal; background-color: brown;" class="cancelbtn">Submit</button>
+              </div>
+              
+            </form>
+        </div>
+
+  </footer>
+  </div>
+
+  <script>
+    // WHEN the user clicks the login button for now it close.
+    function Mylognbtn() {
+      modal.style.display = "none";
+    }
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("login-btn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    
+  </script>
+
+
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

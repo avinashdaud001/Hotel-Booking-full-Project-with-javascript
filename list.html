@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="./styles/list.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./scripts/list.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>List</title>
+</head>
+
+<body style="width: 100%;">
+
+
+    <div>
+
+        <!-- Header of the webpage  -->
+        <header>
+            <div>
+                <a id="logo" href="index.html"><img src="./assests/images/logo.png" alt="logo" height="60px"
+                        width="60px"></a><br>
+
+            </div>
+
+            <button style="float: right; margin-top: -5px; margin-right: 10px;" class="btn btn-light"
+                id="login-btn">Login</button>
+
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div id="modal-header" class="modal-header">
+                        <span class="close">&times;</span>
+                        <h5 class="modal-title">Please Login!</h5>
+
+                        <form action="index.html" method="get" autocomplete="off">
+                            <label for="user">Username:</label>
+                            <input id="user" type="text" name="username" value="" placeholder="enter your name"
+                                required><br><br>
+                            <label for="password">Password:</label>
+                            <input id="password" type="password" name="password" value=""
+                                placeholder="enter your password" required><br>
+
+                    </div>
+                    <div id="modal-footer" class="modal-footer">
+
+                        <button type="button" onclick="Mylognbtn()" id="lognbtn-in-modal"
+                            class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content of the webpage  -->
+
+        <div id="list">
+
+            <a href="#list-sec" style="margin-top: 100px;"><button type="button" class="btn btn-info">List
+                    view</button></a>
+            <a href="#Map-sec" style="margin-top: 100px;"><button type="button" class="btn btn-info">Map
+                    view</button></a>
+
+
+        </div>
+        <!-- section of list of Hotels -->
+        <section>
+            <div class="hotel-flex">
+                <div class="hotel-list" id="list-sec">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                        height="300px" width="300px"><br>
+                    <div class="details">
+                        <a style="font-weight:bold; margin-top: 20%; " href="detail.html">Radisson Blu
+                            Hotel:</a><br>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span><br>
+                        <a href="list.html">New-delhi</a><br>
+                    </div>
+                </div>
+                <div class="hotel-list">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" height="300px"
+                        width="300px"><br>
+                    <div class="details">
+                        <span style="font-weight: bold;">The lalit</span><br>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span><br>
+                        <span>Mumbai</span><br>
+                    </div>
+                </div>
+                <div class="hotel-list">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" height="300px"
+                        width="300px"><br>
+                    <div class="details">
+                        <span style="font-weight: bold;">The Taj Palace</span><br><br>
+                        <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star" ></span><br>
+                        <span>Kolkata</span><br><br>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Map Section -->
+        <section id="Map-sec">
+            <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" height="500px"
+                width="500px"><br><br>
+            <span>Map View</span><br><br>
+        </section>
+
+
+
+
+        <!-- footer of the webpage -->
+        <footer>
+
+            <div id="logogrp">
+
+
+                <!--Facebook logo redirects to facebook official site-->
+                <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" height="20px"
+                        width="22px"></a>
+
+                <!--Instagram logo redirects to instagram official site-->
+                <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png"
+                        height="20px" width="22px"></a>
+
+                <!--Twitter logo redirects to twitter official site-->
+                <a href="https://www.twitter.com/" target="_blank"><img src="assests/images/twitter.png" height="20px"
+                        width="22px"></a><br>
+            </div>
+            <!--Copywrite details-->
+            <span id="copy">© 2022 ROOM SEARCH PVT. LTD.</span>
+
+            <button onclick="document.getElementById('mymodal2').style.display='block'"
+                style="margin-right: 5%;margin-top: 5px; margin-left: 9px; background-color: hsl(51, 100%, 50%); color: white;">Contact
+                Us</button>
+            <!-- The Modal -->
+
+            <div id="mymodal2" style="margin-top: 100px; margin-left: 500px; margin-top: 100px;" class="modal">
+
+                <form class="modal-content animate" action="/action_page.php" method="post" style="max-width: 50%;">
+                    <div style="background-color: aquamarine;" class="modal-content">
+                        <span onclick="document.getElementById('mymodal2').style.display='none'"
+                            class="close">&times;</span>
+                        <div>
+                            <h3 style="font-style: italic;">
+                                Get in touch ----
+                            </h3>
+                            <h5>
+                                Thankyou for reaching out!!!!
+                            </h5>
+                            <h5>
+                                Please enter your email and we will get back to you soon .......
+                            </h5>
+                        </div>
+
+                        <div style="background-color: antiquewhite;" class="cont">
+                            <label for="email"><b>Email</b></label>
+                            <input type="email" placeholder="Enter your email id" name="email" required><br>
+
+
+                        </div>
+
+                        <div class="cont" style="background-color:hsl(0, 0%, 95%)">
+                            <button type="button" onclick="document.getElementById('mymodal2').style.display='none'"
+                                style="border-color: teal; background-color: brown;" class="cancelbtn">Submit</button>
+                        </div>
+
+                </form>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+
+
+    
+
+
+    </script>
+    
+       <script src="./scripts/common.js"></script>
+       <script src="./scripts/list.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
